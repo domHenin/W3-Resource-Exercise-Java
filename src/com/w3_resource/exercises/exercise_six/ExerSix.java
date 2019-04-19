@@ -2,77 +2,67 @@ package com.w3_resource.exercises.exercise_six;
 
 import java.util.Scanner;
 
+//class Multiplication {
+//    private int firNum=0;
+//    private int secNum=0;
+//
+//    public void setFirNum(int firNum) { this.firNum = firNum; }
+//    public void setSecNum(int secNum) { this.secNum = secNum; }
+//
+//    public int getFirNum() { return firNum; }
+//    public int getSecNum() { return secNum; }
+//
+//    public int solution() {
+//        int product = firNum * secNum;
+//        System.out.println("Multiplied Solution: "+product);
+//
+//        return product;
+//    }
+//}
 
-
-
-
-class Subtraction {
-    private int firNum=0;
-    private int secNum=0;
-
-    public void setFirNum(int firNum) { this.firNum = firNum; }
-    public void setSecNum(int secNum) { this.secNum = secNum; }
-
-    public int getFirNum() { return firNum; }
-    public int getSecNum() { return secNum; }
-
-    public int solution() {
-        int difference = firNum - secNum;
-        System.out.println("Subtracted Solution: "+difference);
-
-        return difference;
-    }
-}
-
-class Multiplication {
-    private int firNum=0;
-    private int secNum=0;
-
-    public void setFirNum(int firNum) { this.firNum = firNum; }
-    public void setSecNum(int secNum) { this.secNum = secNum; }
-
-    public int getFirNum() { return firNum; }
-    public int getSecNum() { return secNum; }
-
-    public int solution() {
-        int product = firNum * secNum;
-        System.out.println("Multiplied Solution: "+product);
-
-        return product;
-    }
-}
-
-class Division {
-    private int firNum=0;
-    private int secNum=0;
-
-    public void setFirNum(int firNum) { this.firNum = firNum; }
-    public void setSecNum(int secNum) { this.secNum = secNum; }
-
-    public int getFirNum() { return firNum; }
-    public int getSecNum() { return secNum; }
-
-    public int solution() {
-        int quotient = firNum / secNum;
-        System.out.println("Divided Solution: "+quotient);
-
-        return quotient;
-    }
-}
+//class Division {
+//    private int firNum=0;
+//    private int secNum=0;
+//
+//    public void setFirNum(int firNum) { this.firNum = firNum; }
+//    public void setSecNum(int secNum) { this.secNum = secNum; }
+//
+//    public int getFirNum() { return firNum; }
+//    public int getSecNum() { return secNum; }
+//
+//    public int solution() {
+//        int quotient = firNum / secNum;
+//        System.out.println("Divided Solution: "+quotient);
+//
+//        return quotient;
+//    }
+//}
 
 public class ExerSix {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        GetNumbers getNumbers = new GetNumbers();
-        Addition addition = new Addition();
+//        GetNumbers getNumbers = new GetNumbers();
+        Addition addition = new Addition(125,24);
+        Subtraction subtraction = new Subtraction(125, 24);
+        Multiplication multiplication = new Multiplication(125, 24);
+        Division division = new Division(125, 24);
 
-        System.out.println("Input first Number: ");
-        getNumbers.setFirNum(scanner.nextInt());
-        System.out.println("Input second Number: ");
-        addition.getFirNum(scanner.nextInt());
-        //left off here.
-        //trying to call the 'gitFirNum/getSecNum' from "GetNumbers"
+
+
+//  GET FIRST NUMBER.
+//        System.out.println("Input first Number: ");
+//        getNumbers.setFirNum(scanner.nextInt());
+
+//  GET SECOND NUMBER.
+//        System.out.println("Input second Number: ");
+//        getNumbers.setFirNum(scanner.nextInt());
+
+        addition.solve();
+        subtraction.solve();
+        multiplication.solve();
+        division.solve();
+
     }
 }
 
