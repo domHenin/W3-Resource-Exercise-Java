@@ -2,14 +2,20 @@ package com.w3_resource.exercises.exercise_thirteen;
 
 public class exercise_thirteen {
     public static void main(String[] args) {
-        double width = 5.5;
-        double height = 8.5;
+//        double width = 5.5;
+//        double height = 8.5;
+//        double answer = width * height;
+//        System.out.println("Area Answer: "+answer);
+//        double answerr = 2 * (width + height);
+//        System.out.println("Perimeter Answer: "+answerr);
 
-        double answer = width * height;
-        System.out.println("Answer: "+answer);
+        //NEW CODE::
 
-        double answerr = 2 * (width + height);
-        System.out.println("Answer: "+answerr);
+        AreaSolution areaSolution = new AreaSolution(5.6, 8.5);
+        PerimeterSolution perimeterSolution = new PerimeterSolution(5.6, 8.5);
+
+        areaSolution.solve();
+        perimeterSolution.solve();
     }
 }
 
@@ -18,7 +24,7 @@ public class exercise_thirteen {
 //        Write a Java program to print the area and perimeter of a rectangle.
 //        Go to the editor
 //        Test Data:
-//        Width = 5.5 Height = 8.5
+//        Width = 5.6 Height = 8.5
 // ..
 //        Expected Output
 //        Area is 5.6 * 8.5 = 47.60
